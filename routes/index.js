@@ -8,5 +8,6 @@ router.get('/conocenos', homeController.respondWithConocenos);
 router.get('/servicios', homeController.respondWithServicios);
 router.get('/contacto', homeController.respondWithContact);
 router.get('/cursos', homeController.respondWithCurses);
+router.get('/login', homeController.respondWithLogin);
 
 module.exports = router;

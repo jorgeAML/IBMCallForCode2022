@@ -11,3 +11,8 @@ prolong their usefulness as long as possible, thus supporting a more “circular
 - Educate consumers to reduce demand. Enable them to make more sustainable choices, from
 purchasing responsibly produced items, to consuming less single-use plastics, and making
 better use of reuse and recycle opportunities in their communities.
+
+---
+IBM Technologies to use:
+
+- IBM Virtual Server for classic

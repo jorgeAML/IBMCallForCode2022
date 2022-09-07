@@ -13,3 +13,6 @@ exports.respondWithContact = (req, res) => {
 exports.respondWithCurses = (req, res) => {
     res.render("cursos", {title: "Recycle curse"});
 };
+exports.respondWithLogin = (req, res) => {
+    res.render("login", {title: "login"});
+};
