@@ -2,9 +2,10 @@
     --color-main: white;
     --color-fonts: #293535;
     --font-family-nav: 'Caveat', cursive;
+    --font-family-rubyk: 'Rubik', sans-serif; 
 
     --recy-colorA: #6fa159;
 }
 body {
-    font-family: var(--font-family-nav);
+    font-family: var(--font-family-rubyk);
 }

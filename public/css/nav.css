@@ -9,6 +9,7 @@
     .nav-a > li > a {
         color: var(--color-fonts);
         text-decoration: none;
+        font-family: var(--font-family-nav);
     }
     .nav-a {
         text-align: center;
