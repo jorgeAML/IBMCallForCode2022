@@ -16,3 +16,8 @@ better use of reuse and recycle opportunities in their communities.
 IBM Technologies to use:
 
 - IBM Virtual Server for classic
+
+---
+Node & npm
+
+- If the authentication fail, use passport@0.5 
