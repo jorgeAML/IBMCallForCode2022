@@ -1,3 +1,10 @@
+:root {
+    --color-main: white;
+    --color-fonts: #293535;
+    --font-family-nav: 'Caveat', cursive;
+
+    --recy-colorA: #6fa159;
+}
 body {
-    background-color: brown;
+    font-family: var(--font-family-nav);
 }
