@@ -5,3 +5,9 @@ use nodemon to start the project as:
 > nodemon start
 
 ---
+Goals for this project:
+- Identify opportunities to share, lease, reuse, repair, refurbish, or recycle existing materials to
+prolong their usefulness as long as possible, thus supporting a more “circular economy.”
+- Educate consumers to reduce demand. Enable them to make more sustainable choices, from
+purchasing responsibly produced items, to consuming less single-use plastics, and making
+better use of reuse and recycle opportunities in their communities.
