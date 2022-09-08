@@ -9,6 +9,6 @@ const getUsersParams = (body) => {
 
 module.exports = {
     login: (req, res) => {
-        res.render("users/login");
+        res.render("users/login", {title:"Login users"});
     }
 }

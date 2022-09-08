@@ -9,7 +9,6 @@ router.get('/conocenos', homeController.respondWithConocenos);
 router.get('/servicios', homeController.respondWithServicios);
 router.get('/contacto', homeController.respondWithContact);
 router.get('/cursos', homeController.respondWithCurses);
-router.get('/users/login', homeController.respondWithLogin);
 
 /* LOGIN ROUTE */
 router.get("/users/login", usersController.login);
