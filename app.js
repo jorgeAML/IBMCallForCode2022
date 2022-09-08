@@ -1,3 +1,14 @@
+const mongoose = require('mongoose')
+mongoose.connect(
+    "mongodb://localhost:27017/recycleapp_db",
+    {useNewUrlParser: true}
+);
+const db = mongoose.connection;
+db.once("open", () => {
+    console.log("Successfully connected to Mongodb using Mongoose");
+});
+mongoose.Promise = global.Promise;
+
 const express = require('express');
 const routes = require('./routes/index');
 const path = require('path');
