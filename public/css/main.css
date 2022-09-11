@@ -11,6 +11,7 @@
 *, *::before, *::after {
     box-sizing: inherit;
 }
+
 body {
     margin: 0;
     font-family: var(--font-family-rubyk);
