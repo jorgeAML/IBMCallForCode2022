@@ -1,3 +1,27 @@
-header {
-    height: 100vh;
+.page-header {
+    padding: 0.4em 1em;
+    background-color: var(--color-main);
+}
+.title > h1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.slogan {
+    color: #888;
+    font-size: 0.875em;
+    margin: 0;
+}
+.hero {
+    padding: 2em 1em;
+    text-align: center;
+    background-size: 100%;
+    color: var(--color-main);
+    text-shadow: 0.1em 0.1em 0.3em var(--color-fonts);
+}
+
+
+@media (min-width: 35em) {
+    .page-header {
+        padding: 1em;
+    }
 }

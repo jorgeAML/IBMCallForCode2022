@@ -1,4 +1,6 @@
 :root {
+    box-sizing: border-box;
+    font-size: calc(1vw + 0.6em);
     --color-main: white;
     --color-fonts: #293535;
     --font-family-nav: 'Caveat', cursive;
@@ -6,6 +8,32 @@
 
     --recy-colorA: #6fa159;
 }
+*, *::before, *::after {
+    box-sizing: inherit;
+}
 body {
+    margin: 0;
     font-family: var(--font-family-rubyk);
+}
+a:link {
+    color: #1476b8;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:visited {
+    color: #1430b8;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    color: #b81414;
+}
+main {
+    padding: 1em;
+}
+.subtitle {
+    margin:1.5em 0 1.5em 0;
+    font-size: 0.875em;
+    text-transform: uppercase;
 }
