@@ -18,6 +18,7 @@ const bodyparser = require('body-parser');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 
+
 /* COOKIE SESSION */
 app.use(cookieSession({
     name: 'session',
@@ -46,6 +47,9 @@ passport.deserializeUser(function(id, done) {
     });
 });
 /* STATIC FILES, ENGINGE AND ROUTES*/
+app.use('/css', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/css')))
+app.use('/js', express.static(path.join(__dirname, 'node_modules/bootstrap/dist/js')))
+app.use('/js', express.static(path.join(__dirname, 'node_modules/jquery/dist')))
 app.use(express.static(path.join(__dirname,'/public')));
 app.set('view engine', 'ejs');
 app.set('views', './views');
