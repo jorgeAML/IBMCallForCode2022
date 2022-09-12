@@ -9,6 +9,8 @@ router.get('/conocenos', homeController.respondWithConocenos);
 router.get('/servicios', homeController.respondWithServicios);
 router.get('/contacto', homeController.respondWithContact);
 router.get('/cursos', homeController.respondWithCurses);
+//Credits
+//<a href="https://www.freepik.com/free-vector/recycle-symbol-environmental-conservation-vector_3759828.htm#query=recycle&position=8&from_view=search">Image by rawpixel.com</a> on Freepik
 
 /* LOGIN ROUTE */
 router.get("/users/login", usersController.login);
