@@ -9,7 +9,22 @@
     </div>
     <div class="row">
         <div class="col">
-            Form
+            <a href="recycle/new">Fill the form</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h3>Check the news</h3>
+            
+            <% easyrecicles.forEach(recycle => { %>
+                <p><%= recycle.name %></p>
+                <p><%= recycle.phone %></p>
+                <p><%= recycle.address %></p>
+                <p><%= recycle.items %></p>
+                <p><%= recycle.description %></p>
+                <p><%= recycle.date %></p>
+            <% }); %>
+            
         </div>
     </div>
 </div>
