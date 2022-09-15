@@ -16,3 +16,6 @@ exports.respondWithCurses = (req, res) => {
 exports.respondWithLogin = (req, res) => {
     res.render("users/login", {title: "login"});
 };
+exports.respondWithRecycle = (req, res) => {
+    res.render("recycle", {title:"Recycle"});
+}
