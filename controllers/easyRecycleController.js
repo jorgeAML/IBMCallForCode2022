@@ -28,7 +28,7 @@ module.exports = {
         };
         EasyRecycle.create(recycleParams)
             .then(easyrecicles => {
-                res.locals.redirect = "easyRecycle/index";
+                res.locals.redirect = "/recycle";
                 res.locals.easyrecicle = easyrecicles;
                 next();
             }).catch(error => {
@@ -46,7 +46,7 @@ module.exports = {
         let easyID = req.params.id;
         EasyRecycle.findById(easyID)
             .then(easyrecycles => {
-                res.render("easyrecycle/edit"), {
+                res.render("easyRecycle/edit"), {
                     easyrecicles: easyrecicles,
                     title: "Edit values for easyRecycle section"
                 }; 
@@ -67,7 +67,7 @@ module.exports = {
         EasyRecycle: findByIdAndUpdate(easyID, {
             $set: recycleParams
         }).then(easyrecicles => {
-            res.locals.redirect = 'easyRecycle/recycle';
+            res.locals.redirect = '/recycle';
             res.locals.easyrecicles = easyrecicles;
             next();
         }).catch(error => {
@@ -79,7 +79,7 @@ module.exports = {
         let easyID = req.params.id;
         EasyRecycle.findByIdAndUpdate(easyID)
             .then(() => {
-                res.locals.redirect = 'easyRecycle/recycle';
+                res.locals.redirect = '/recycle';
                 next();
             }).catch (error => {
                 console.log(`Error deleting recycle values by ID ${error.message}`);

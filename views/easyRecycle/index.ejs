@@ -13,18 +13,17 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col-md">
             <h3>Check the news</h3>
-            
             <% easyrecicles.forEach(recycle => { %>
-                <p><%= recycle.name %></p>
-                <p><%= recycle.phone %></p>
-                <p><%= recycle.address %></p>
-                <p><%= recycle.items %></p>
-                <p><%= recycle.description %></p>
-                <p><%= recycle.date %></p>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card'title"><%= recycle.name %> <span class="badge bg-secondary"><%= recycle.items %></span></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Phone: <%= recycle.phone %>; Address: <%= recycle.address %></h6>
+                        <p class="card-text"><%= recycle.description %></p>
+                    </div>
+                </div>
             <% }); %>
-            
         </div>
     </div>
 </div>

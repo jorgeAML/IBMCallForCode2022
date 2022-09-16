@@ -1,11 +1,37 @@
-<h3>Fill the form to start</h3>
-
-<form action="/easyRecycle/create" method="POST">
-    <input type="text" name="name" placeholder="Name">
-    <input type="number" name="phone" placeholder="Phone">
-    <input type="text" name="address" placeholder="Address">
-    <input type="text" name="items" placeholder="Items">
-    <input type="text" name="description" placeholder="Description">
-    <input type="date" name="date" placeholder="Date">
-    <input type="submit" name="Submit">
-</form>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Fill the form and make a more circular economy</h4>
+            <p>All your information will be save and publish right away on the last page.</p>
+            <form action="/easyRecycle/create" method="POST">
+                <div class="row">
+                <div class="col">
+                    <label for="name" class="form-label">Please write your name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Name">
+                    <label class="form-label" for="number">Your phone number will be useful</label>
+                    <input class="form-control" id="number" type="number" name="phone" placeholder="Phone">
+                    <label for="address" class="form-label">Your address will for to find your place to pick up</label>
+                    <input id="address" class="form-control" type="text" name="address" placeholder="Address">
+                </div>
+                <div class="col">
+                    <label for="items" class="form-label">Take the items or make a new one</label>
+                    <input class="form-control" list="items" name="items" placeholder="Items">
+                    <datalist id="items">
+                        <option value="Wood">
+                        <option value="Plastic">
+                        <option value="Paper">
+                        <option value="Clothe">
+                        <option value="Glass">
+                    </datalist>
+                    <label for="description" class="form-label">Make a short or long description about your items or garbage</label>
+                    <input id="description" class="form-control" type="text" name="description" placeholder="Description" aria-label="readonly input example">
+                    <label for="date" class="form-label">Date to remember</label>
+                    <input id="date" class="form-control" type="date" name="date" placeholder="Date">
+                </div>
+                </div>
+                <label for="submit">Submit your recycle information</label>
+                <input id="submit" class="form-control btn btn-primary" type="submit" name="Submit">
+            </form>
+        </div>
+    </div>
+</div>
