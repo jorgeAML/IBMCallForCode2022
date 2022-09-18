@@ -19,6 +19,7 @@ const app = express();
 const bodyparser = require('body-parser');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
+const methodOverride = require('method-override');
 
 
 /* COOKIE SESSION */
@@ -28,7 +29,11 @@ app.use(cookieSession({
     maxAge: 24 * 60 * 60 * 1000
 }))
 /* BODY PARSER */
+app.use(methodOverride("_method", {
+    methods: ["POST", "GET"]
+}));
 app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.json());
 /* PASSPORT SETUP */
 app.use(passport.initialize());
 app.use(passport.session());

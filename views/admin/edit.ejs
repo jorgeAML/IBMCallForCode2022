@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4>Edit the form and make a more circular economy</h4>
+            <p>You are the admin</p>
+            <form method="POST" action="<%=`/admin/${easyrecicles._id}/update?_method=PUT`%>">
+                <div class="row">
+                <div class="col">
+                    <label for="name" class="form-label">Please edit your name</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Name" value="<%= easyrecicles.name %>">
+                    <label class="form-label" for="number">Your phone number will be edited</label>
+                    <input class="form-control" id="number" type="number" name="phone" placeholder="Phone" value="<%= easyrecicles.phone %>">
+                    <label for="address" class="form-label">Your address will for to find your place to pick up you can edit</label>
+                    <input id="address" class="form-control" type="text" name="address" placeholder="Address" value="<%= easyrecicles.address %>">
+                </div>
+                <div class="col">
+                    <label for="items" class="form-label">Take the items or make a new one</label>
+                    <input class="form-control" list="items" name="items" placeholder="Items" value="<%= easyrecicles.items %>">
+                    <datalist id="items">
+                        <option value="Wood">
+                        <option value="Plastic">
+                        <option value="Paper">
+                        <option value="Clothe">
+                        <option value="Glass">
+                    </datalist>
+                    <label for="description" class="form-label">Edit a short or long description about your items or garbage</label>
+                    <input id="description" class="form-control" type="text" name="description" placeholder="Description" aria-label="readonly input example" value="<%= easyrecicles.description %>">
+                    <label for="date" class="form-label">Edit Date to remember</label>
+                    <input id="date" class="form-control" type="date" name="date" placeholder="Date" value="<%= easyrecicles.date %>">
+                </div>
+                </div>
+                <label for="submit">Submit your recycle information</label>
+                <input id="submit" class="form-control btn btn-primary" type="submit" name="Submit">
+            </form>
+        </div>
+    </div>
+</div>
