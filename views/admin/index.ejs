@@ -7,7 +7,7 @@
             <% easyrecicles.forEach(recycle => { %>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card'title"><%= recycle.name %> <span class="badge bg-secondary"><%= recycle.items %></span><a href="<%=`/admin/${recycle._id}/edit`%>"><span class="badge bg-primary">Edit</span></a></h5>
+                        <h5 class="card'title"><%= recycle.name %> <span class="badge bg-secondary"><%= recycle.items %></span><a href="<%=`/admin/${recycle._id}/edit`%>"><span class="badge bg-primary">Edit</span></a><a href="<%=`/admin/${recycle._id}/delete?_method=DELETE`%>" onclick="return confirm('Are you sure do you want to delete this record?')"><span class="badge bg-danger">Delete</span></a></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Phone: <%= recycle.phone %>; Address: <%= recycle.address %></h6>
                         <!--<h6 class="card-subtitle mb-2 text-muted"><%= recycle.date %></h6>-->
                         <p class="card-text"><%= recycle.description %></p>

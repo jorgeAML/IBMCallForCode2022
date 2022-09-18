@@ -55,13 +55,13 @@ module.exports = {
     },
     delete: (req, res, next) => {
         let easyID = req.params.id;
-        EasyRecycle.findByIdAndUpdate(easyID)
+        EasyRecycle.findByIdAndRemove(easyID)
             .then(() => {
                 res.locals.redirect = '/admin';
                 next();
             }).catch (error => {
                 console.log(`Error deleting recycle values by ID ${error.message}`);
-                next();
+                next(error);
             });
     }
 }
