@@ -12,6 +12,7 @@ mongoose.Promise = global.Promise;
 const express = require('express');
 const routes = require('./routes/index');
 const recycleRoutes = require('./routes/easyRecycle');
+const adminRoutes = require('./routes/admin');
 const path = require('path');
 const layouts = require('express-ejs-layouts');
 const app = express();
@@ -55,6 +56,6 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(layouts);
-app.use('/', routes, recycleRoutes);
+app.use('/', routes, recycleRoutes, adminRoutes);
 
 module.exports = app;
