@@ -13,6 +13,7 @@ const express = require('express');
 const routes = require('./routes/index');
 const recycleRoutes = require('./routes/easyRecycle');
 const adminRoutes = require('./routes/admin');
+const findTrashRoutes = require('./routes/findTrash');
 const path = require('path');
 const layouts = require('express-ejs-layouts');
 const app = express();
@@ -61,6 +62,6 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.set('view engine', 'ejs');
 app.set('views', './views');
 app.use(layouts);
-app.use('/', routes, recycleRoutes, adminRoutes);
+app.use('/', routes, recycleRoutes, adminRoutes, findTrashRoutes);
 
 module.exports = app;
