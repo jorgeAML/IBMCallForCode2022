@@ -16,7 +16,17 @@
             <% }); %>
         </div>
         <div class="col-md">
-            <h4>For recycle points</h4>
+            <h4>For garbage points</h4>
+            <% findmytrashes.forEach(r => { %>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card'title"><%= r.name %> <span class="badge bg-secondary"><%= r.items %></span><a href="<%=`/admin/${r._id}/editGarbage`%>"><span class="badge bg-primary">Edit</span></a><a href="<%=`/admin/${r._id}/delete?_method=DELETE`%>" onclick="return confirm('Are you sure do you want to delete this record?')"><span class="badge bg-danger">Delete</span></a></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Phone: <%= r.phone %>; Address: <%= r.address %></h6>
+                        <!--<h6 class="card-subtitle mb-2 text-muted"><%= r.date %></h6>-->
+                        <p class="card-text"><%= r.description %></p>
+                    </div>
+                </div>
+            <% }); %>
         </div>
     </div>
 </div>
