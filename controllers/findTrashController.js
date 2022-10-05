@@ -4,8 +4,8 @@ const FindMyTrash = require('../models/findTrashModel');
 module.exports = {
     index: (req, res, next) => {
         FindMyTrash.find({})
-        .then(findmytrash => {
-            res.locals.findmytrash = findmytrash;
+        .then(findmytrashes => {
+            res.locals.findmytrashes = findmytrashes;
             next();
         }).catch(error => {
             console.log(`Error Fetching find my trash section values ${error.message}`);
@@ -28,9 +28,9 @@ module.exports = {
             date: req.body.date
         };
         FindMyTrash.create(recycleParams)
-            .then(findmytrash => {
+            .then(findmytrashes => {
                 res.locals.redirect = "/findTrash";
-                res.locals.findmytrash = findmytrash;
+                res.locals.findmytrashes = findmytrashes;
                 next();
             }).catch(error => {
                 console.log(`Error saving finding trashes values ${error.message}`);

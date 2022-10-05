@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Welcome to Find the trash page</h1>
+            <p>Here you can fill the form to upload all the information that you can share with us, at the end anyone can go to your home or place to pick up the garbage to recycle.
+                the aims of this sections is to know of each other in our community if you have some items that we can prolong their live and share, reuse, repair existing materials as a Circular economy.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="findTrash/new">Fill the form</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <h3>Check the news</h3>
+            <% findmytrashes.forEach(r => { %>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card'title"><%= r.name %> <span class="badge bg-secondary"><%= r.items %></span></h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Phone: <%= r.phone %>; Address: <%= r.address %></h6>
+                        <p class="card-text"><%= r.description %></p>
+                        <div id="map" style="height: 150px;"></div>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+        <div class="col-md">
+            
+        </div>
+    </div>
+</div>
+
+<script src="./js/map.js"></script>
