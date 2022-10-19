@@ -23,10 +23,21 @@ Node & npm
 - If the authentication fail, use passport@0.5 
 
 ---
-### Submission Name
+### Submission Name:
 Recycle Community App for Global Challenge
-### Description of your solution (140)
+### Description of your solution (140):
 The recycle community app try to solve the problem of the garbage in a community with the aim of circular economy.
-### 3min url
+### 3min url:
 The url of the app will be here.
-### The issue (400)
+### The issue (400):
+We found that in our community just a few known about the circular econommy but never use it or implemented before and many objects that we can reuse or repair always goes to the garbage even more the recollect garbage system does not have a recycle system, we starte to see that many people throw to the garbage carton, wood, furniture and vegetable that is very useful for a circular econommy.
+### The solution (400):
+Develop a platform that you can interact, and post your garbage for reuse and repair, for totally free, 
+### Solution long description:
+The Webapp will increase the use of the circular econommy in a community sharing the objects or garbage that they are considered for a long life or a better collection. On the WebApp you can post all the information that will be useful and anybody can find you in your community and collect or give you the type of garbage that your interested for recycle and make a better circular econommy.
+### IBM Technologies used:
+- Databases for MongoDB;
+- Cloud virtual server;
+
+### Submission for University edition:
+Yes.
