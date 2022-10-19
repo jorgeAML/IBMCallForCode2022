@@ -5,7 +5,9 @@ This is the entry for the challenge of 2022 using the topic: Reducing volume of 
 This project was build with NodeJs using dependencies installed with npm, was tested and configure it on Linux Debian 11. so if you want to install in your personal machine or a server you might to install the following technologies on Windows:
 - NodeJS v16.17.1 or later
 - Mongo v5.0.13 or later
+
 For Linux on Debian:
+
 - NodeJS v16.17.1 or later
 - Mongo v4.4.17
 After you installed Mongo and Nodejs you can start your proyect with the command below, but remember you mongo database must be active using the port:27017 the collection was created by default you do not need to create anothe one.
