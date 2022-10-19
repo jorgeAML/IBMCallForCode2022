@@ -10,6 +10,9 @@ For Linux on Debian:
 
 - NodeJS v16.17.1 or later
 - Mongo v4.4.17
+
+We highly recommend use this version of mongo on Debian 11, because we found some problems during the installation of this DB if you want to use another DB, remember to configure the app.js file at the top and change the properties.
+
 After you installed Mongo and Nodejs you can start your proyect with the command below, but remember you mongo database must be active using the port:27017 the collection was created by default you do not need to create anothe one.
 use nodemon to start the project as:
 > nodemon start
