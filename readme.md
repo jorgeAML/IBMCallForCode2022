@@ -21,3 +21,12 @@ IBM Technologies to use:
 Node & npm
 
 - If the authentication fail, use passport@0.5 
+
+---
+### Submission Name
+Recycle Community App for Global Challenge
+### Description of your solution (140)
+The recycle community app try to solve the problem of the garbage in a community with the aim of circular economy.
+### 3min url
+The url of the app will be here.
+### The issue (400)
