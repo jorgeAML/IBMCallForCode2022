@@ -1,6 +1,16 @@
+:root {
+    --color-nav-font: #444444;
+    --color-nav-border: #38761d;
+    --color-nav-border-light: 	#7eb566;
+    --color-nav-active: 	#b0c3d9;
+    --color-nav-visited: #9a9280;
+}
 .aml-img {
     height: 200px;
     margin: 4%;
     border-radius: 15px;
+}
+a {
+    text-decoration: none;
 }
 
