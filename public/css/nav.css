@@ -3,6 +3,7 @@
         list-style: none;
         margin: 10px 0 0 0;
         background-color: transparent;
+        transition: 0.5s;
     }
     #main-nav li {
         display: inline-block;
@@ -24,6 +25,7 @@
     #main-nav a:hover {
         border-bottom: 5px solid var(--color-nav-border-light);
         border-radius: 15px;
+        transition: all 0.5s;
     }
     #main-nav a:active {
         color: var(--color-nav-border);
@@ -31,6 +33,9 @@
     }
     #main-nav li:nth-child(1) {
         margin-right: 400px;
+    }
+    #main-nav a::after {
+        transition-duration: 0.5s;
     }
 }
 @media (max-width: 800px) {
