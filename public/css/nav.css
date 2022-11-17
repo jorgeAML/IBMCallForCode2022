@@ -13,6 +13,7 @@
         padding: 10px 20px;
         color: var(--color-nav-font);
         font-size: large;
+        font-family: var(--nav-font);
     }
     #main-nav a:link {
         color: var(--color-nav-border);
@@ -29,7 +30,7 @@
         text-decoration: dashed;
     }
     #main-nav li:nth-child(1) {
-        margin-right: 470px;
+        margin-right: 400px;
     }
 }
 @media (max-width: 800px) {

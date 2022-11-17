@@ -1,5 +1,5 @@
 exports.respondWithIndex = (req, res) => {
-    res.render("index", {title:"IBM PROYECT 2022"});
+    res.render("index", {title:"Asovenal App"});
 };
 exports.respondWithConocenos = (req, res) => {
     res.render("conocenos", {title:"About us"});

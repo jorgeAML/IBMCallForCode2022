@@ -4,13 +4,39 @@
     --color-nav-border-light: 	#7eb566;
     --color-nav-active: 	#b0c3d9;
     --color-nav-visited: #9a9280;
+    --nav-font: 'Rubik Dirt', cursive;
+    --nav-font-sent: 'Nerko One', cursive;
+}
+.font-titles {
+    font-family: var(--nav-font);
+    color: var(--color-nav-visited);
+}
+.font-sent {
+    font-family: var(--nav-font-sent);
+    font-size: x-large;
+    color: var(--color-nav-font);
 }
 .aml-img {
     height: 200px;
     margin: 4%;
     border-radius: 15px;
 }
-a {
-    text-decoration: none;
+@media (min-width: 1200px) {
+    button {
+        background: none;
+        
+        
+    }
+    .aml-button {
+        border: 2px solid var(--color-nav-border-light);
+        border-radius: 5px;
+        padding: 1%;
+        font-family: var(--nav-font-sent);
+        font-size: x-large;
+        box-shadow: 5px 5px var(--color-nav-border);
+        color: var(--color-nav-font);
+    }
 }
+
+
 
