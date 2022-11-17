@@ -45,21 +45,29 @@ p {
         font-size: x-large;
         box-shadow: 5px 5px var(--color-nav-border);
         color: var(--color-nav-font);
+        transition: 0.5s;
     }
     .aml-button:hover {
         box-shadow: 3px 3px var(--shadow-cards);
-        transition: box-shadow 1s ease;
+        transition: box-shadow inherit ease;
         border: 2px solid var(--color-nav-visited);
+    }
+    .aml-button::after {
+        transition-duration: inherit;
     }
     .aml-card {
         margin: 10px 0 30px 0;
         box-shadow: 2px 3px 6px var(--shadow-cards);
         border-radius: 15px;
         padding: 5%;
+        transition: 0.5s;
     }
     .aml-card:hover {
         box-shadow: 2px 3px 6px var(--color-nav-visited);
-        transition: box-shadow 1s ease-in-out;
+        transition: box-shadow inherit ease-in-out;
+    }
+    .aml-card::after {
+        transition-duration: inherit;
     }
     .aml-card img {
         width: 100%;
