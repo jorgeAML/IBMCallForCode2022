@@ -1,3 +1,18 @@
-@media screen and(min-width: 767px) and (max-width: 1023px) {
-    
+@media screen and(min-width: 809px) and (max-width: 1079px) {
+    button {
+        background: none;
+    }
+    .aml-button {
+        border: 2px solid var(--color-nav-border-light);
+        border-radius: 5px;
+        padding: 1%;
+        font-family: var(--nav-font-sent);
+        font-size: x-large;
+        box-shadow: 5px 5px var(--color-nav-border);
+        color: var(--color-nav-font);
+    }
+    .aml-card img {
+        width: 100%;
+        object-fit: cover;
+    }
 }
