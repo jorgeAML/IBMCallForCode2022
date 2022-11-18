@@ -1,0 +1,25 @@
+@media screen and (max-width: 767px) {
+    .aml-card {
+        margin: 10px 0 30px 0;
+        box-shadow: 2px 3px 6px var(--shadow-cards);
+        border-radius: 15px;
+        padding: 5%;
+    }
+    .aml-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+    button {
+        background: none;
+    }
+    .aml-button {
+        border: 2px solid var(--color-nav-border-light);
+        border-radius: 5px;
+        padding: 1%;
+        font-family: var(--nav-font-sent);
+        font-size: x-large;
+        box-shadow: 5px 5px var(--color-nav-border);
+        color: var(--color-nav-font);
+    }
+}
