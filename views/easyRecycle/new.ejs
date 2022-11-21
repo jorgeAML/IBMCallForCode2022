@@ -1,36 +1,37 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h4>Fill the form and make a more circular economy</h4>
-            <p>All your information will be save and publish right away on the last page.</p>
+            <h4 class="font-titles">Llena el formulario y haz un reciclaje más eficaz</h4>
+            <p class="font-sent">Recuerda que toda la información que ingreses debe ser lo más exacto posible al tipo de basura para reciclar, esto ayudará a las personas que se dedican a la economía circular a recoger la basura correspondiente.</p>
+            
             <form action="/easyRecycle/create" method="POST">
                 <div class="row">
                 <div class="col">
-                    <label for="name" class="form-label">Please write your name</label>
-                    <input class="form-control" id="name" type="text" name="name" placeholder="Name">
-                    <label class="form-label" for="number">Your phone number will be useful</label>
-                    <input class="form-control" id="number" type="number" name="phone" placeholder="Phone">
-                    <label for="address" class="form-label">Your address will for to find your place to pick up</label>
-                    <input id="address" class="form-control" type="text" name="address" placeholder="Address">
+                    <label for="name" class="form-label font-sent">Escribe tu nombre</label>
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Nombre y apellido">
+                    <label class="form-label font-sent" for="number">Numero de teléfono</label>
+                    <input class="form-control" id="number" type="number" name="phone" placeholder="Teléfono">
+                    <label for="address" class="form-label font-sent">Dirección</label>
+                    <input id="address" class="form-control" type="text" name="address" placeholder="Dirección">
                 </div>
                 <div class="col">
-                    <label for="items" class="form-label">Take the items or make a new one</label>
-                    <input class="form-control" list="items" name="items" placeholder="Items">
+                    <label for="items" class="form-label font-sent">Tipo de basura</label>
+                    <input class="form-control" list="items" name="items" placeholder="Tipo">
                     <datalist id="items">
-                        <option value="Wood">
-                        <option value="Plastic">
-                        <option value="Paper">
-                        <option value="Clothe">
-                        <option value="Glass">
+                        <option value="Madera">
+                        <option value="Plasticos">
+                        <option value="Papel">
+                        <option value="Ropa">
+                        <option value="Vidrio">
                     </datalist>
-                    <label for="description" class="form-label">Make a short or long description about your items or garbage</label>
-                    <input id="description" class="form-control" type="text" name="description" placeholder="Description" aria-label="readonly input example">
-                    <label for="date" class="form-label">Date to remember</label>
-                    <input id="date" class="form-control" type="date" name="date" placeholder="Date">
+                    <label for="description" class="form-label font-sent">Breve descripción del tipo de basura</label>
+                    <input id="description" class="form-control" type="text" name="description" placeholder="Descripción" aria-label="readonly input example">
+                    <label for="date" class="form-label font-sent">Fecha</label>
+                    <input id="date" class="form-control" type="date" name="date" placeholder="Fecha">
                 </div>
                 </div>
-                <label for="submit">Submit your recycle information</label>
-                <input id="submit" class="form-control btn btn-primary" type="submit" name="Submit">
+                <label for="submit" class="font-sent">Publicar</label>
+                <input id="submit" class="form-control aml-button" type="submit" name="Submit" placeholder="Publicar">
             </form>
         </div>
     </div>

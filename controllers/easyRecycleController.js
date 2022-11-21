@@ -12,10 +12,10 @@ module.exports = {
         });
     },
     indexView: (req, res) => {
-        res.render("easyRecycle/index", {title: "Circular Economy"});
+        res.render("easyRecycle/index", {title: "Reciclaje Rápido"});
     },
     new: (req, res) => {
-        res.render("easyRecycle/new", {title: "Share and reuse"});
+        res.render("easyRecycle/new", {title: "Compartir y reusar"});
     },
     create: (req, res, next) => {
         let recycleParams = {
