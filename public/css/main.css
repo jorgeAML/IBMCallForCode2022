@@ -40,6 +40,10 @@ p {
 #cards-recycle {
     margin: 50px 0 0 0;
 }
+.map {
+    border: 2px solid var(--color-nav-active);
+    border-radius: 15px;
+}
 @media (min-width: 1024px) {
     button {
         background: none;

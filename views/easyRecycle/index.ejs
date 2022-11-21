@@ -1,34 +1,35 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Welcome to the recycle page</h1>
-            <p>Here you can fill the form to upload all the information that you can share with us, at the end anyone can go to your home or place to pick up the garbage to recycle.
-                the aims of this sections is to know of each other in our community if you have some items that we can prolong their live and share, reuse, repair existing materials as a Circular economy.
+            <h1 class="font-titles">Bienvenido a la sección de Reciclaje rápido</h1>
+            <p class="font-sent">Se parte de la comunidad que pone en acción y se toma en serio el reciclaje, utiliza el formulario para solicitar tu recolección de basura para que otros puedan ir a recogerlo.
             </p>
         </div>
+        
     </div>
     <div class="row">
         <div class="col">
-            <a href="recycle/new"><button type="button" class="btn btn-warning">Fill the form</button></a>
+            <a href="recycle/new"><button type="button" class="aml-button">Formulario</button></a>
         </div>
     </div>
     <div class="row">
         <div class="col-lg">
-            <h3>Check the news</h3>
+            <h3 class="font-titles">Por reciclar</h3>
             <% easyrecicles.forEach(recycle => { %>
-                <div class="card">
+                <div class="aml-card">
                     <div class="card-body">
                         <h5 class="card'title"><%= recycle.name %> <span class="badge bg-secondary"><%= recycle.items %></span></h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Phone: <%= recycle.phone %>; Address: <%= recycle.address %></h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Telefono: <%= recycle.phone %>; Dirección: <%= recycle.address %></h6>
                         <p class="card-text"><%= recycle.description %></p>
-                        
                     </div>
                 </div>
             <% }); %>
         </div>
         <div class="col-md">
-            <h3>Check the map for a better visualization</h3>
-            <div id="map" style="height: 500px;"></div>
+            <div class="aml-card">
+                <h3>Mapa de localización</h3>
+                <div class="map" id="map" style="height: 500px;"></div>
+            </div>
         </div>
     </div>
 </div>
