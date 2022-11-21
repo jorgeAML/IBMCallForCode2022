@@ -25,6 +25,7 @@ p {
     overflow: hidden;
 }
 .font-titles {
+    margin-top: 10px;
     font-family: var(--nav-font);
     color: var(--color-nav-visited);
 }

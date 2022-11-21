@@ -1,21 +1,21 @@
 <div class="container">
     <div class="row">
         <div class="col">
-            <h1>Welcome to Find the trash page</h1>
-            <p>Hello this section is for everybody that has and want the resposibility for receive garbage for reuse, as vegetables, wood, paper, etc.
+            <h1 class="font-titles">Lugares de reciclaje</h1>
+            <p class="font-sent">Encuentra personas que se dedican al reciclaje, por si eres uno de ellos utiliza el formulario para darte a conocer y para que los demás sepan que tipo de basura recolectas y como, dónde deben entregarlo.
             </p>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <a href="findTrash/new"><button type="button" class="btn btn-warning">Fill the form</button></a>
+            <a href="findTrash/new"><button type="button" class="aml-button">Fill the form</button></a>
         </div>
     </div>
     <div class="row">
         <div class="col-lg">
-            <h3>Check the news</h3>
+            <h3 class="font-titles">Recicladores</h3>
             <% findmytrashes.forEach(r => { %>
-                <div class="card">
+                <div class="aml-card">
                     <div class="card-body">
                         <h5 class="card'title"><%= r.name %> <span class="badge bg-secondary"><%= r.items %></span></h5>
                         <h6 class="card-subtitle mb-2 text-muted">Phone: <%= r.phone %>; Address: <%= r.address %></h6>
@@ -26,8 +26,10 @@
         </div>
         
         <div class="col-md">
-            <h3>Check the map to find the places nearby</h3>
-            <div id="map" style="height: 500px;"></div>
+            <div class="aml-card">
+                <h3 class="font-titles">Utiliza el mapa para encontrar los puntos de reciclaje</h3>
+                <div class="map" id="map" style="height: 500px;"></div>
+            </div>
         </div>
     </div>
 </div>
